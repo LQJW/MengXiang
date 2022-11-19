@@ -39,6 +39,8 @@ public class NetWorkService {
                 ChannelPipeline pipeline = ch.pipeline();
 
                 MessageHandlerAdapter messageHandlerAdapter = new MessageHandlerAdapter(netWorkServiceOption.getListener());
+                pipeline.addLast(new MessageEncoder());
+                pipeline.addLast(new MessageDecoder());
                 pipeline.addLast(messageHandlerAdapter);
             }
         });

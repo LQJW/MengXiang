@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package LoginPackage;
+
+option java_package = "indi.qjw.mx.common.proto";
+option java_outer_classname = "LoginProto";
+
+message ReqLogin {
+	string token = 1;
+}
+
+message ResLogin {
+	string user = 1;
+}

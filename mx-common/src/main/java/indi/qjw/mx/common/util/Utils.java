@@ -3,13 +3,12 @@ package indi.qjw.mx.common.util;
 import com.google.common.base.Charsets;
 import com.google.common.hash.Hashing;
 import com.google.common.primitives.Ints;
-import com.sun.istack.internal.Nullable;
+import org.jetbrains.annotations.Nullable;
 import indi.qjw.mx.common.tuple.Tuple;
 import indi.qjw.mx.common.tuple.TwoTuple;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ArrayUtils;
 
-import java.io.*;
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.math.RoundingMode;
